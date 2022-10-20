@@ -9,6 +9,7 @@ mongoose.connect("")
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+// prueba git
 router.get('/user', (req, res) => {
     UserSchema.find(function (err, data) {
         if (err) {
